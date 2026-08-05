@@ -1,0 +1,10 @@
+CREATE INDEX IF NOT EXISTS idx_subjects_user_id ON subjects(user_id);
+CREATE INDEX IF NOT EXISTS idx_notes_user_updated ON notes(user_id, updated_at DESC);
+CREATE INDEX IF NOT EXISTS idx_notes_user_subject ON notes(user_id, subject_id);
+CREATE INDEX IF NOT EXISTS idx_deadlines_user_due ON deadlines(user_id, due_date ASC);
+CREATE INDEX IF NOT EXISTS idx_deadlines_user_subject ON deadlines(user_id, subject_id);
+CREATE INDEX IF NOT EXISTS idx_sessions_user_started ON pomodoro_sessions(user_id, started_at DESC);
+CREATE INDEX IF NOT EXISTS idx_sessions_user_status ON pomodoro_sessions(user_id, status);
+CREATE INDEX IF NOT EXISTS idx_review_logs_user_note_reviewed ON review_logs(user_id, note_id, reviewed_at DESC);
+CREATE INDEX IF NOT EXISTS idx_contact_messages_created_at ON contact_messages(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_contact_rate_limits_reset_at ON contact_rate_limits(reset_at);

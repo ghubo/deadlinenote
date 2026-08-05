@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-family-serif: "Instrument Serif", Georgia, serif;
+  --font-family-sans: "DM Sans", sans-serif;
+
+  --color-brand-red:   #E24B4A;
+  --color-brand-dark:  #0F0F0D;
+  --color-brand-cream: #FAFAF8;
+  --color-brand-muted: #F5F3EE;
+
+  --color-urgency-critical: #E24B4A;
+  --color-urgency-warning:  #EF9F27;
+  --color-urgency-safe:     #1D9E75;
+}

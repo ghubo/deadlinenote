@@ -1,0 +1,16 @@
+# Better Auth Secret (generate with openssl rand -base64 32 or npx better-auth secret)
+BETTER_AUTH_SECRET="your_better_auth_secret_here"
+
+# Cloudflare AI Gateway Base URL, Token, and Model
+# Refer to Workers AI models documentation: https://developers.cloudflare.com/workers-ai/models/
+CF_AIG_URL="https://gateway.ai.cloudflare.com/v1/YOUR_ACCOUNT_ID/YOUR_GATEWAY/compat"
+CF_AIG_TOKEN="your_cf_ai_gateway_token_here"
+CF_AIG_MODEL="workers-ai/@cf/google/gemma-4-26b-a4b-it"
+
+# Better Auth Infrastructure API Key
+BETTER_AUTH_API_KEY="your_better_auth_api_key_here"
+
+
+
+
+
